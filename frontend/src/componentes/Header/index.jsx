@@ -15,7 +15,7 @@ const Header = () => {
             <nav className='cabecalho'>
                 <div className='cabecalho__opcoes'>
                     <button onClick={alternarMenu} className='cabecalho__botao'>
-                        <img src="src/assets/menu__hamburguer.svg" alt="Menu hamburguer" />
+                        <img src="/menu__hamburguer.svg" alt="Menu hamburguer" />
                     </button>
                     {aberto && (
                         <>
@@ -23,7 +23,7 @@ const Header = () => {
                             <ul className='cabecalho__links'>
                                 <li className=''>
                                     <button onClick={alternarMenu} className='cabecalho__botao cabecalho__link'
-                                    ><img src="src/assets/menu__hamburguer.svg" alt="Menu hamburguer" /></button>
+                                    ><img src="/menu__hamburguer.svg" alt="Menu hamburguer" /></button>
                                 </li>
                                 <li className=''>
                                     <Link className='cabecalho__link' to={"/"}>
@@ -47,7 +47,7 @@ const Header = () => {
                         </>
                     )}
                     <Link className='' to={"/"}>
-                        <img src="src/assets/logo__branco.svg" alt="Logo da 2E" />
+                        <img src="/logo__branco.svg" alt="Logo da 2E" />
                     </Link>
                 </div>
                 <div className='cabecalho__botao'>

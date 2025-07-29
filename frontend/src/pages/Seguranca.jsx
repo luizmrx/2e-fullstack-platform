@@ -14,13 +14,13 @@ const Seguranca = () => {
         {
             titulo: "Economia Garantida",
             paragrafo: "Você só é indicado a empresas confiáveis, com histórico sólido e autorização para operar no mercado de energia. E o melhor: sempre com o maior desconto possível.",
-            imagem: "src/assets/cifrao.svg",
+            imagem: "/cifrao.svg",
             textoAlternativo: "Cifrão"
         },
         {
             titulo: "Proteção de Dados",
             paragrafo: "Sua privacidade é levada a sério, e todos os seus dados são tratados em conformidade com a LGPD.",
-            imagem: "src/assets/cadeado.svg",
+            imagem: "/cadeado.svg",
             textoAlternativo: "Cadeado"
         }
     ]

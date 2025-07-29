@@ -9,13 +9,13 @@ const Parceiros = () => {
             </h2>
             <div className='parceiros__container'>
                 <div className='parceiros__container__logo'>
-                    <img src="src/assets/aws__logo.svg" alt="Logo AWS" />
+                    <img src="/aws__logo.svg" alt="Logo AWS" />
                 </div>
                 <div className='parceiros__container__logo'>
-                    <img src="src/assets/origo__logo.svg" alt="Logo Origo" />
+                    <img src="/origo__logo.svg" alt="Logo Origo" />
                 </div>
                 <div className='parceiros__container__logo'>
-                    <img src="src/assets/openai__logo.svg" alt="Logo OpenAI" />
+                    <img src="/openai__logo.svg" alt="Logo OpenAI" />
                 </div>
                 {/* <Mensagem parceiro="src/assets/aws__logo.svg" parceiroTexto="Logo AWS" />
                 <Mensagem parceiro="src/assets/origo__logo.svg" parceiroTexto="Logo Origo" />

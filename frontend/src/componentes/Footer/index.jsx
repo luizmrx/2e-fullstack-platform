@@ -7,19 +7,19 @@ const Footer = () =>{
             <h2 className='rodape__titulo'>
                 Na 2E, facilitamos o caminho entre você e os serviços que realmente importam.
             </h2>
-            <Mensagem imagem="src/assets/logo__branco.svg" descricao="Com o apoio da Lumi — nossa inteligência artificial especializada — analisamos suas informações para conectar você com empresas que oferecem descontos reais e vantagens exclusivas, sempre com total segurança, transparência e sem enrolação.
+            <Mensagem imagem="/logo__branco.svg" descricao="Com o apoio da Lumi — nossa inteligência artificial especializada — analisamos suas informações para conectar você com empresas que oferecem descontos reais e vantagens exclusivas, sempre com total segurança, transparência e sem enrolação.
             
             
             Entre em contato email@encontraeconomia.com.br"/>
             <div className='redes'>
                 <a href="#">
-                    <img src="src/assets/instagram.svg" alt="Instagram" />
+                    <img src="instagram.svg" alt="Instagram" />
                 </a>
                 <a href="#">
-                    <img src="src/assets/whatsapp.svg" alt="Whatsapp" />
+                    <img src="/whatsapp.svg" alt="Whatsapp" />
                 </a>
                 <a href="#">
-                    <img src="src/assets/linkedin.svg" alt="Linkedin" />
+                    <img src="/linkedin.svg" alt="Linkedin" />
                 </a>
             </div>
             <hr />

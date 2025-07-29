@@ -12,7 +12,7 @@ const Newsletter = () =>{
             </p>
             <Formulario/>
             <p className='newsletter__aviso'>
-                <img src="src/assets/cadeado.svg" alt="Cadeado" className='img__cadeado'/>
+                <img src="/cadeado.svg" alt="Cadeado" className='img__cadeado'/>
                 Suas informações estão protegidas com criptografia e em total conformidade com a LGPD.
             </p>
         </section>

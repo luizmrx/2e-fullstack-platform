@@ -8,7 +8,7 @@ const Justificativas = (props) => {
             </h2>
             {props.itens.map((item, index) => {
                 return <div className='justificativas__container' key={item}>
-                    <img src="src/assets/sinalOK.svg" alt="Sinal OK" />
+                    <img src="/sinalOK.svg" alt="Sinal OK" />
                     <p className='justificativas__paragrafo'>{item}</p>
                 </div>
             })}
