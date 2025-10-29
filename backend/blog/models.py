@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 class Artigo(models.Model):
 
@@ -6,7 +7,8 @@ class Artigo(models.Model):
     titulo = models.CharField(max_length=300)
     capa = models.ImageField(upload_to='capas/', blank=True, null=True)
     resumo = models.TextField(default="", null=False)
-    data_publicacao = models.DateTimeField(auto_now_add=True)
+    # data automática, mas editável manualmente
+    data_publicacao = models.DateTimeField(default=timezone.now)
     
     # Estrutura de conteúdo a ser mostrata na página exclusiva daquele artigo
     conteudo = models.TextField(default="", null=False)
