@@ -22,7 +22,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('area-restrita/', admin.site.urls),
     path('api/', include('api.urls')),
     path('blog/', include('blog.urls')),
     # re_path(r'^.*$', IndexView.as_view(), name='index'),
