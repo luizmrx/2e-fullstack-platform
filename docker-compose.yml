@@ -2,6 +2,7 @@ services:
   django:
     build: .
     container_name: django
+    image: site2e-django:latest
     command: gunicorn setup.wsgi:application --bind 0.0.0.0:8000 --workers 3
     volumes:
       - ./backend:/app/backend
@@ -10,14 +11,26 @@ services:
       - .env
     expose:
       - "8000"
+    networks:
+      - site-network
 
   nginx:
     build: ./nginx
     container_name: nginx
+    image: site2e-nginx:latest
     ports:
       - "80:80"
     volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./backend/staticfiles:/static
       - ./backend/media:/media
+      # - ./scripts/wait-for-it.sh:/wait-for-it.sh:ro
     depends_on:
       - django
+    entrypoint: ["/wait-for-it.sh", "django:8000", "--timeout=30", "--strict", "--", "nginx", "-g", "daemon off;"]
+    networks:
+      - site-network
+
+networks:
+  site-network:
+    driver: bridge
