@@ -1,5 +1,6 @@
 import Mensagem from '../Mensagem'
 import './Parceiros.css'
+import Imagem from '../Imagem'
 
 const Parceiros = () => {
     return (
@@ -9,17 +10,14 @@ const Parceiros = () => {
             </h2>
             <div className='parceiros__container'>
                 <div className='parceiros__container__logo'>
-                    <img src="/aws__logo.svg" alt="Logo AWS" />
+                    <Imagem caminho="/aws__logo.svg" descricao="Logo AWS"/>
                 </div>
                 <div className='parceiros__container__logo'>
-                    <img src="/origo__logo.svg" alt="Logo Origo" />
+                    <Imagem caminho="/origo__logo.svg" descricao="Logo Origo"/>
                 </div>
                 <div className='parceiros__container__logo'>
-                    <img src="/openai__logo.svg" alt="Logo OpenAI" />
+                    <Imagem caminho="/openai__logo.svg" descricao="Logo OpenAI"/>
                 </div>
-                {/* <Mensagem parceiro="src/assets/aws__logo.svg" parceiroTexto="Logo AWS" />
-                <Mensagem parceiro="src/assets/origo__logo.svg" parceiroTexto="Logo Origo" />
-                <Mensagem parceiro="src/assets/openai__logo.svg" parceiroTexto="Logo OpenAI" /> */}
             </div>
         </section>
     )

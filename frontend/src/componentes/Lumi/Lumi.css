@@ -1,0 +1,44 @@
+.lumi{
+    background: linear-gradient(to bottom, #6387F7, #3C59B5);
+    color: white;
+    padding: 4em 2em 2em 2em;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.lumi__titulo{
+    font-size: 20px;
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.lumi__descricao{
+    text-align: left;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .lumi{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .lumi__info{
+        width: 45%;
+    }
+
+    .lumi__titulo{
+        font-size: 24px;
+        margin-bottom: 36px;
+    }
+
+    .lumi__descricao{
+        font-size: 20px;
+    }
+
+}

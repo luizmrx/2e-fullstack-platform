@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.callout {
+    text-align: center;
+    color: white;
+    padding: 4em 2em;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+    background: linear-gradient(270deg, #2A90DE, #4ecab1, #2A90DE);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite;
+}
+
+.callout__titulo {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media screen and (min-width: 720px) {
+
+    .callout__titulo {
+        font-size: 28px;
+    }
+
+    .callout__mensagem {
+        font-size: 24px;
+    }
+
+}

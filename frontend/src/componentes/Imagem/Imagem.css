@@ -1,0 +1,110 @@
+.artigo__item__home {
+    width: 120px;
+}
+
+.artigo_item_lista{
+    height: 140px;
+}
+
+.banner__sobre__imagem {
+    width: 300px;
+}
+
+.caixa__imagem {
+    width: 100px;
+}
+
+.caixa__parceiro {
+    width: 80px;
+}
+
+.img__cadeado {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.icone__vantagens {
+    height: 20px;
+    margin-right: 8px;
+}
+
+.icone__menu {
+    /* altura dos ícones padronizada em relação a altura */
+    height: 24px;
+    margin: 0 12px;
+}
+
+.cadeado__banner {
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.icone__menu__suspenso {
+    height: 20px;
+    margin: 0 24px 0 12px;
+}
+
+.historia__home {
+    height: 240px;
+}
+
+.logo__menu__suspenso {
+    height: 40px;
+}
+
+.celular__lumi {
+    width: 90%;
+    max-width: 500px;
+}
+
+.qrcode {
+    height: 360px;
+}
+
+.logo__footer {
+    height: 32px;
+    margin-right: 16px;
+}
+
+@media screen and (min-width: 520px) {
+
+    .icone__menu__suspenso {
+        height: 25px;
+    }
+
+    .logo__menu__suspenso {
+        height: 55px;
+    }
+
+    .icone__menu {
+        height: 32px;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+
+    .redes__footer {
+        height: 60px;
+    }
+
+    .celular__lumi {
+        width: 50%;
+    }
+
+    .artigo__item__home {
+        width: 240px;
+    }
+
+    .historia__home {
+        height: 380px;
+    }
+
+    .logo__footer {
+        height: 60px;
+        margin-right: 32px;
+    }
+
+}

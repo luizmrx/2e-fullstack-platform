@@ -1,92 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-header{
+header {
     box-sizing: border-box;
     height: 75.4px;
-    margin-bottom: 16px;
 }
 
-.cabecalho{
+.cabecalho {
+    height: 75.4px;
+    box-sizing: border-box;
     background: linear-gradient(to bottom, #0F183E, #1A274F);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0px;
+    padding: 10px;
     z-index: 100;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
-.cabecalho__opcoes{
+.cabecalho__esquerda {
     display: flex;
+    gap: 15px;
     align-items: center;
-    width: 45%;
-    justify-content: space-around;
     position: relative;
 }
 
-.cabecalho__botao,
-.cabecalho__botao__suspenso{
+.cabecalho__menu__hamburguer {
     background: none;
     border: none;
-}
-
-.cabecalho__botao__suspenso{
-    /* padding: 1.5em 7em; */
-}
-
-.cabecalho__botao{
-    margin: 0 10px;
-}
-
-.contato{
     text-decoration: none;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 15px;
-    background-color: #00CFD5;
-    padding: 7px 10px;
-    border-radius: 10px;
-    color: #1A274F;
-}
- 
-.cabecalho__links{
-    position: absolute;
-    top: -16%;
-    background: linear-gradient(to bottom, #3D518E, #0F183E);
-    border-radius: 3px;
-    z-index: 2;
-    box-sizing: border-box;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 200px;
 }
 
-.cabecalho__link{
+.cabecalho__botao {
+    background: none;
+    border: none;
     text-decoration: none;
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 15px;
-    display: block;
-    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: center;
 }
 
-.menu__hamburguer{
-    padding: 0.8em 0.5em;
+.menu__suspenso {
+    position: absolute;
+    top: -18px;
+    left: -210px;
+    transition: left .7s ease;
+    background-color: rgba(4, 53, 179, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 3px;
+    z-index: 2;
+    box-sizing: border-box;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 8px;
+}
+
+.menu__suspenso.aberto {
+    left: -10px;
+}
+
+.menu__suspenso__item {
+    width: 100%;
 }
 
 .overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.icone__menu__especial {
+    width: 20px;
+    margin: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho__direita {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar__home img {
+    height: 40px;
+}
+
+@media screen and (min-width:520px) {
+
+    .menu__suspenso {
+        width: 300px;
+        height: 400px;
+    }
+
+    .cabecalho__menu__hamburguer img {
+        height: 25px;
+    }
+
+    .navbar__home img {
+        height: 55px;
+    }
+
+    .menu__suspenso {
+        top: -10px;
+        left: -310px;
+    }
+
+    .cabecalho__botao {
+        font-size: 24px;
+    }
+
 }

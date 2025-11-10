@@ -1,4 +1,5 @@
 import './Justificativas.css'
+import Imagem from '../Imagem'
 
 const Justificativas = (props) => {
     return (
@@ -6,12 +7,16 @@ const Justificativas = (props) => {
             <h2 className='justificativas__titulo'>
                 {props.titulo}
             </h2>
-            {props.itens.map((item, index) => {
-                return <div className='justificativas__container' key={item}>
-                    <img src="/sinalOK.svg" alt="Sinal OK" />
-                    <p className='justificativas__paragrafo'>{item}</p>
-                </div>
-            })}
+            <div className='justificativas__container'>
+                {props.itens.map((item, index) => {
+                    return (
+                        <div className='justificativas__item' key={item}>
+                            <Imagem caminho="/sinalOK.svg" descricao="Sinal OK" />
+                            <p className='justificativas__paragrafo'>{item}</p>
+                        </div>
+                    )
+                })}
+            </div>
         </section>
     )
 }

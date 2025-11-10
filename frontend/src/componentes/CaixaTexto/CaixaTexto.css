@@ -9,3 +9,12 @@
 .caixa__texto::placeholder{
     color: #1A274F;
 }
+
+@media screen and (min-width: 1024px) {
+
+    .caixa__texto{
+        font-size: 24px;
+        padding: 8px 5px;
+    }
+    
+}

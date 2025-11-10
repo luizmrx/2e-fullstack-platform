@@ -1,4 +1,7 @@
 .convite{
     background: linear-gradient(to bottom, #3C59B5, #3C59B5);
-    padding: 2em;
+    padding: 5em 2em;
+    display: flex;
+    justify-content: center;
+
 }

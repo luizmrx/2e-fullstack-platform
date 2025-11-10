@@ -1,11 +1,12 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    padding: 1em 0;
 }
 
-.container__titulo{
+.container__titulo {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -15,18 +16,23 @@
     text-align: center;
 }
 
-.caixa{
+.caixa {
     background-color: rgba(214, 219, 233, 0.1);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
     box-sizing: border-box;
     position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
 }
 
 .caixa__titulo,
 .caixa__paragrafo,
-.caixa__descricao{
+.caixa__descricao {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -35,28 +41,69 @@
     padding: 1em 2em;
 }
 
-.caixa__titulo{
+.caixa__titulo {
     text-align: center;
 }
 
-.caixa__paragrafo{
-    font-size: 16px;
+.caixa__paragrafo {
+    font-size: 12px;
     white-space: pre-line;
+    font-weight: 300;
 }
 
-.caixa__imagem{
-    width: 100px;
+.container__imagem {
+    height: 100px;
 }
 
-.caixa__parceiro{
+.caixa__imagem {
     width: 80px;
 }
 
-.caixa__descricao{
+.caixa__descricao {
     font-size: 14px;
-    white-space: pre-line; 
+    white-space: pre-line;
 }
 
-.caixa__container__botao{
+.caixa__botao {
     margin: 1em 3em;
+}
+
+.caixa__botao__externo {
+    margin-top: 50%;
+}
+
+.container__banner {
+    width: 40%;
+}
+
+@media screen and (min-width: 720px) {
+
+    .caixa__titulo,
+    .container__titulo {
+        font-size: 28px;
+    }
+
+    .caixa__paragrafo {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .caixa{
+        min-width: 260px;
+        height: 400px;
+    }
+
+    .caixa__botao {
+        margin: 3em 8em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .caixa{
+        height: 250px;
+    }
 }

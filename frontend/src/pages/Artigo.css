@@ -1,0 +1,10 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.artigo__container{
+    padding: 2em;
+    background: linear-gradient(180deg, #5a7a9e 0%, #485563 100%);
+}

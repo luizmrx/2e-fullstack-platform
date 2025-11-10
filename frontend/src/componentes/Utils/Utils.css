@@ -1,0 +1,12 @@
+.sublinhado {
+    text-decoration: underline;
+}
+
+.cabecalho__direita__link {
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.cabecalho__direita__link:hover {
+  color: #aaaaaa;
+}

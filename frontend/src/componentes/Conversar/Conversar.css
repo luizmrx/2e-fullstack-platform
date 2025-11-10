@@ -1,9 +1,0 @@
-.conversar{
-    background: linear-gradient(to bottom, #334479, #3C59B5);
-    box-sizing: border-box;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2.5em 2em;
-}

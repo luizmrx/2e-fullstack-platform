@@ -1,0 +1,15 @@
+.link__personalizado {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link__personalizado:hover {
+    background-color: white;
+    color: #0a2540;  /* azul escuro */
+    transform: translateY(-2px);
+}

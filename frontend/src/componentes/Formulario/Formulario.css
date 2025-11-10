@@ -4,12 +4,24 @@
     flex-direction: column;
     padding: 2em;
     width: 80%;
+    max-width: 520px;
     gap: 1em;
     background-color: rgba(214, 219, 233, 0.1);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
     border-radius: 20px;
     box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.formulario__container{
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.formulario__container input{
+    width: 100%;
 }
 
 .formulario__botao{
@@ -22,4 +34,24 @@
     border-radius: 10px;
     border: none;
     padding: 8px;
+}
+
+.checkbox__linha{
+    text-align: left;
+}
+
+.checkbox__linha span{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .formulario__botao{
+        font-size: 24px;
+    }
+    
 }

@@ -1,8 +1,11 @@
+import Banner from "../componentes/Banner"
 import Etapas from "../componentes/Etapas"
-import Historia from "../componentes/Historia"
 import Footer from "../componentes/Footer"
 import Atendimento from "../componentes/Atendimento"
 import Justificativas from "../componentes/Justificativas"
+import BannerSobre from "../componentes/BannerSobre"
+import Lumi from "../componentes/Lumi"
+import Callout from "../componentes/Callout"
 
 const Sobre = () => {
 
@@ -43,9 +46,10 @@ const Sobre = () => {
 
     return (
         <>
-            <Historia />
+            <BannerSobre/>
+            <Lumi titulo={"Tudo começou com uma ideia simples: ajudar brasileiros a economizar na conta de luz"} descricao={"A 2E nasceu da inquietação de um estudante da USP que, durante seu estágio, percebeu uma grande barreira: milhões de brasileiros desconheciam o real potencial dos créditos de energia para reduzir a conta de luz. Ao compartilhar essa visão com seu gestor, surgiu a ideia de transformar esse desafio em oportunidade. Assim nasceu a 2E: uma plataforma inovadora que conecta clientes às melhores revendedoras de energia em um único ambiente digital."}/>
+            <Callout titulo={"Nossa missão"} mensagem={"Conectar os nossos clientes às melhores revendedoras de energia, garantindo economia real na conta de luz"}/>
             <Etapas titulo="Economizar é simples assim" itens={etapasSobre} />
-            <Atendimento />
             <Justificativas titulo="Por que escolher a 2E?" itens={justificativasSobre}/>
             <Footer />
         </>

@@ -3,8 +3,25 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: linear-gradient(to bottom, #334479, #3C59B5);
+    background: linear-gradient(to bottom, #3C59B5, #334479);
     padding: 3em 16px;
+}
+
+.newsletter__top,
+.newsletter__bottom {
+    background-color: #3C59B5;
+    padding: 16px 2em;
+}
+
+.newsletter__bottom{
+    background-color: #334479;
+}
+
+hr {
+    border: none;
+    margin: 0;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0.258);
 }
 
 .newsletter__titulo,
@@ -34,4 +51,17 @@
 .img__cadeado{
     width: 18px;
     margin-right: 5px;
+}
+
+@media screen and (min-width: 720px) {
+    
+    .newsletter__titulo{
+        font-size: 24px;
+    }
+
+    .newsletter__paragrafo,
+    .newsletter__aviso{
+        font-size: 20px;
+    }
+
 }

@@ -1,8 +1,10 @@
 import './Botao.css'
 
-const Botao = (props) =>{
-    return(
-        <a href="#" className='botao'>{props.texto}</a>
+const Botao = (props) => {
+    return (
+        <>
+            <a href={props.endereco || "/"} className={`botao ${props.classe}`}>{props.texto}</a>
+        </>
     )
 }
 

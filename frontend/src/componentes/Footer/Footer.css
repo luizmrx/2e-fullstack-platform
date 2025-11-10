@@ -1,30 +1,143 @@
-.rodape{
-    background: linear-gradient(to bottom, #3C59B5, #1A274F);
-    padding: 2em;
-    text-align: center;
+.rodape {
+  background: linear-gradient(to right, #0F183E, #283FA4);
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-around;
+  gap: 32px;
+  align-items: center;
+  box-sizing: border-box;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.rodape__titulo,
-.rodape__sobre{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    color: white;
-    font-size: 20px;
+.rodape__titulo {
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
 }
 
-.rodape__titulo{
-    padding-bottom: 2em;
+.rodape__divisor {
+  background-color: transparent;
+  padding: 0px 2em;
+  width: 100%;
 }
 
-.redes{
-    padding: 2em;
-    display: flex;
-    justify-content: space-around;
+.rodape__divisor hr {
+  border: none;
+  margin: 0;
+  height: 1.5px;
+  background-color: rgba(255, 255, 255, 0.258);
 }
 
-.rodape__sobre{
-    padding-top: 2em;
-    font-weight: 300;
-    font-size: 12px;
+.rodape__links {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: first baseline;
+}
+
+.rodape__links__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+}
+
+.rodape__links__item {
+  list-style: none;
+}
+
+.rodape__link {
+  text-decoration: none;
+  color: white;
+}
+
+.rodape__link:hover{
+  color: #70cdff;
+}
+
+.rodape__icone {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 45px;
+  font-size: 25px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+
+.rodape__icone .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+
+.rodape__icone:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+
+.rodape__icone:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+  z-index: 2;
+}
+
+.rodape__icone:hover:before {
+  top: 0;
+}
+
+.rodape__links__container .rodape__links__item:nth-child(1) .rodape__icone:before {
+  background: linear-gradient(45deg, #4c6ef5, #3b5999, #2d4373);
+}
+
+.rodape__links__container .rodape__links__item:nth-child(2) .rodape__icone:before {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.rodape__links__container .rodape__links__item:nth-child(3) .rodape__icone:before {
+  background: linear-gradient(45deg, #0e76a8, #0077b5, #004182);
+}
+
+.rodape__sobre {
+  font-weight: 200;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 520px) {
+
+  .rodape {
+    gap: 16px;
+  }
+
+}
+
+@media screen and (min-width: 720px) {
+
+  .rodape__titulo {
+    font-size: 24px;
+  }
+
+  .rodape__sobre {
+    font-size: 16px;
+  }
+
 }

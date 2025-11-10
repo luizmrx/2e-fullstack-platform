@@ -1,14 +1,86 @@
-.atendimento{
-    background: linear-gradient(to bottom, #334479, #0F183E);
-    padding: 2em;
-}
-
-.atendimento__titulo{
+.atendimento {
+    background: linear-gradient(to bottom, #3C59B5, #3D518E);
+    padding: 4em 3em;
     font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
-    padding-bottom: 2em;
+}
+
+.atendimento__top,
+.atendimento__bottom {
+    background-color: #3C59B5;
+    padding: 16px 2em;
+}
+
+.atendimento__bottom{
+    background-color: #3D518E;
+}
+
+hr {
+    border: none;
+    margin: 0;
+    height: 1.5px;
+    background-color: rgba(255, 255, 255, 0.258);
+}
+
+.atendimento__titulo {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.atendimento__descricao {
+    white-space: pre-line;
+    text-align: left;
+}
+
+.atendimento__lista {
+    max-width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.atendimento__item {
+    font-weight: 600;
+    margin-top: 32px;
+    background-color: rgba(214, 219, 233, 0.1);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 4px solid #00CFD5;
+    padding: 16px 24px;
+    width: 33%;
+    position: relative;
+    overflow: hidden;
+}
+
+.atendimento__item:nth-child(1) {
+    margin-left: 0px;
+}
+
+.atendimento__item:nth-child(2) {
+    margin-left: 30%;
+}
+
+.atendimento__item:nth-child(3) {
+    margin-left: auto;
+}
+
+
+
+
+@media screen and (min-width: 720px) {
+
+    .atendimento__titulo {
+        font-size: 24px;
+    }
+
+    .atendimento__descricao,
+    .atendimento__item{
+        font-size: 20px;
+    }
+
 }

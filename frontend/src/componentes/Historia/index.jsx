@@ -1,16 +1,27 @@
 import './Historia.css'
-import Mensagem from '../Mensagem'
+import Imagem from '../Imagem'
+import LinkPersonalizado from '../LinkPersonalizado';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-const Historia = () =>{
-    return(
-        <main className='historia'>
-            <Mensagem titulo="Sobre a 2E" paragrafo="Economia real na sua conta de luz, com tecnologia, inteligência e atendimento direto no WhatsApp."/>
-            <p className='historia__paragrafo'>Na 2E, acreditamos que economizar na conta de luz deveria ser simples, acessível e vantajoso para todos. Por isso, desenvolvemos uma solução que conecta você às revendedoras de energia mais vantajosas do mercado, sempre com foco na melhor economia possível, de forma prática e 100% gratuita.</p>
-            <p className='historia__paragrafo'>
-                Com a ajuda da Lumi, nossa inteligência artificial exclusiva, iniciamos um atendimento direto pelo WhatsApp. Ela explica tudo de forma simples e coleta os documentos necessários para seu cadastro, com total segurança e privacidade.
-            </p>
-            <p className='historia__paragrafo'>Nosso compromisso é garantir um desconto maior do que contratar direto com a revendedora, mantemos nosso banco de dados constantemente atualizado, comparando ofertas e condições para indicar a revendedora ideal para o seu perfil.</p>
-        </main>
+const Historia = () => {
+    return (
+        <section className='historia'>
+
+            <section className='historia__info'>
+                <h2 className='historia__titulo'>
+                    Conheça a nossa história
+                </h2>
+                <p className='historia__paragrafo'>
+                    De uma ideia nascida dentro da USP para uma startup que ajuda brasileiros a economizar na conta de luz. A 2E conecta você às melhores ofertas de energia, com atendimento rápido, sem filas e preços que cabem no seu bolso.
+                </p>
+                <LinkPersonalizado destino="/sobre" texto="Saiba mais"/>
+            </section>
+
+            <Imagem caminho="/historia__home.jpg" descricao="Mesa com diversas pessoas discutindo ideias." classe="historia__home" />
+
+
+
+        </section>
     )
 }
 

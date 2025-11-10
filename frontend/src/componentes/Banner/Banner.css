@@ -1,56 +1,102 @@
-.principal{
-    background: linear-gradient(to bottom, #1A274F, #0F183E);
-    padding: 2em;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.principal {
+    background: linear-gradient(to bottom, #1A274F, #3C59B5);
+    padding: 4em 2em;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    text-align: center;
     position: relative;
+    justify-content: space-around;
+    gap: 64px;
     align-items: center;
-}
-
-.imagem-wrapper {
-  position: relative; /* para posicionar a luz e a img */
-  display: inline-block; /* para se ajustar ao tamanho da imagem */
-  width: 100%;
-}
-
-.imagem-wrapper img{
-    width: 100%;
-    position: relative;
-    z-index: 1; /* acima da luz */
-    display: block;
-}
-
-.luz__roxa{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(ellipse, rgb(134, 123, 255) 0%, transparent 90%);
-    filter: blur(40px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.luz__verde {
-    position: absolute;
-    top: 70%;   /* ajuste para centralizar verticalmente */
-    left: 60%;  /* ajuste para centralizar horizontalmente */
-    transform: translate(-50%, -50%);
-    width: 200px;  /* tamanho da luz */
-    height: 200px; /* tamanho da luz */
-    background: linear-gradient(135deg, #00CFD5, #737373);
-    filter: blur(60px);
-    pointer-events: none;
-    z-index: 0;
-}
-
-.principal__paragrafo{
+    box-sizing: border-box;
     color: white;
     font-family: "Poppins", sans-serif;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 400;
     font-style: normal;
-    font-size: 13px;
+}
+
+.titulo{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 1em;
+    text-align: left;
+    background-color: rgba(214, 219, 233, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    margin-bottom: 24px;
+}
+
+.descricao{
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.nao__encontrado {
+    height: 100vh;
+}
+
+@media screen and (min-width: 520px) {
+
+    .titulo{
+        font-size: 24px;
+    }
+
+    .paragrafo{
+        font-size: 20px;
+    }
+
+    .descricao{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (min-width:720px){
+
+    .principal__info{
+        width: 70%;
+        margin-right: auto;
+    }
+
+    .background__home {
+        background:
+            url('../../../public/logo__cinza.svg') no-repeat calc(100% - 40px) top,
+            linear-gradient(to bottom, #1A274F, #3C59B5);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .titulo{
+        font-size: 28px;
+    }
+
+    .paragrafo{
+        font-size: 24px;
+    }
+
+    .descricao{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .titulo{
+        font-size: 32px;
+    }
+
+    .paragrafo{
+        font-size: 28px;
+    }
+
+    .descricao{
+        font-size: 24px;
+    }
+    
 }

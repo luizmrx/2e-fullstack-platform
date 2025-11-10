@@ -1,0 +1,67 @@
+.banner__sobre {
+    padding: 4em 2em;
+    background: linear-gradient(to bottom, #0F183E, #3C59B5);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    background:
+        url('../../../public/paineis__solares__grafico.jpg') no-repeat,
+        linear-gradient(to bottom, #1A274F, #3C59B5);
+    background-size: cover, cover;
+    background-position: center 0px, center top;
+    display: flex;
+    justify-content: center;
+}
+
+.banner__sobre__titulo {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1em 2em;
+    background-color: rgba(214, 219, 233, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+
+@media screen and (min-width:520px) {
+
+    .banner__sobre {
+        padding: 6em 2em;
+        background:
+            url('../../../public/paineis__solares__grafico.jpg') no-repeat,
+            linear-gradient(to bottom, #1A274F, #3C59B5);
+        background-size: cover, cover;
+        background-position: center -40px, center top;
+    }
+
+}
+
+@media screen and (min-width:720px) {
+
+    .banner__sobre {
+        padding: 8em 2em;
+        background:
+            url('../../../public/paineis__solares__grafico.jpg') no-repeat,
+            linear-gradient(to bottom, #1A274F, #3C59B5);
+        background-size: cover, cover;
+        background-position: center -80px, center top;
+    }
+
+    .banner__sobre__titulo{
+        font-size: 28px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .banner__sobre {
+        padding: 10em 2em;
+        background:
+            url('../../../public/paineis__solares__grafico.jpg') no-repeat,
+            linear-gradient(to bottom, #1A274F, #3C59B5);
+        background-size: cover, cover;
+        background-position: center -200px, center top;
+    }
+
+}
