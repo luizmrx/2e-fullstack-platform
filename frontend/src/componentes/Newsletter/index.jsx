@@ -10,7 +10,7 @@ const Newsletter = () => {
             </div>
             <section className='newsletter'>
                 <h2 className='newsletter__titulo'>
-                    Fique por dentro das melhores oportunidades
+                    Fique por dentro das novidades e das melhores oportunidades do Brasil
                 </h2>
                 <p className='newsletter__paragrafo'>
                     Receba atualizações sobre o mercado de energia, dicas práticas para economizar e ofertas exclusivas direto no seu e-mail.
